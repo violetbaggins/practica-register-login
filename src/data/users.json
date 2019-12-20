@@ -1,0 +1,26 @@
+[
+ {
+  "id": 1,
+  "name": "Paola",
+  "lastname": "Escudero",
+  "email": "paolaescudero@gmail.com",
+  "password": "123",
+  "avatar": "user_avatar_1576874150047.jpg"
+ },
+ {
+  "id": 2,
+  "name": "Paola",
+  "lastname": "Escudero",
+  "email": "paolaescudero@gmail.com",
+  "password": "123",
+  "avatar": "user_avatar_1576874150877.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Abe",
+  "lastname": "Simpson",
+  "email": "oldcoot@gmail.com",
+  "password": "123",
+  "avatar": "user_avatar_1576874245380.PNG"
+ }
+]

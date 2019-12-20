@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu&display=swap" rel="stylesheet">
+    <title>Reshister</title>
+</head>
+<body>
+    <h1>Reshister Jier:</h1>
+    <div class="container">
+		<h2>Formulario de Registro</h2>
+		<form action="/register" method="POST" enctype="multipart/form-data">
+			<div class="form-group">
+				<label>Nombre:</label>
+				<input type="text" class="form-control" name="name" placeholder="Ej: Ana">
+			</div>
+			<div class="form-group">
+				<label>Apellido:</label>
+				<input type="text" class="form-control" name="lastname" placeholder="Ej: Pérez">
+			</div>
+			<div  class="form-group">
+				<label>Email:</label>
+				<input type="email" class="form-control" name="email" placeholder="Ej: email@server.com">
+			</div>
+			<div class="form-group">
+				<label>Contraseña:</label>
+				<input type="password" class="form-control" name="password" placeholder="******">
+			</div>
+			<div  class="form-group">
+				<label>Repetir Contraseña:</label>
+				<input type="password" class="form-control" name="rePassword" placeholder="******">
+			</div>
+			<div  class="form-group">
+				<label>Avatar:</label>
+				<input type="file" class="form-control" name="avatar">
+			</div>
+			<button type="submit">Registrarse</button>
+		</form>
+	</div>
+
+</body>
+</html>
