@@ -12,14 +12,18 @@ h1{
     color:lightcoral;
     text-align: center;
 }
-a{
+nav{
+    margin-left:20px;
+    font-size: 22px;
+}
+nav a{
     text-decoration: none;
     color: white;
     display:inline-block;
 }
-a:hover{
+nav a:hover{
     text-decoration: none;
-    color: lightskyblue;
+    color: rgb(44, 7, 30);
 }
 header{
     display:block;
@@ -29,7 +33,7 @@ header{
 
 .container {
 	max-width: 1200px;
-    margin: auto;
+    margin: 15px auto;
     background-color:lightcoral;
 }
 .user-box{
@@ -46,6 +50,13 @@ header{
     left:5px;
     color:#FFF;
 }
+.card-title a{
+    color: coral;
+}
+.card-title a:hover{
+    color: rgb(44, 7, 30);
+    text-decoration: none;
+}
 .card-columns{
     width: 95%;
     margin: 10px auto;
@@ -53,4 +64,20 @@ header{
 }
 .card{
     margin:5px;
+}
+/* PROFILE PAGE*/
+.welcome-user{
+    margin:10px;
+    color:white;
+}
+.user-image img{
+    margin: 10px auto;
+}
+.bio-user{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color:white;
+    border: solid white 1px;
+    background-color: lightseagreen;
+    padding:10px;
 }

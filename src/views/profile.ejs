@@ -17,24 +17,23 @@
             <a href="/login">Log in</a>
         </nav>
     </header>
-    <h1>Bienvenidos</h1>
-    <br>
-    <br>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12r"><h2>Listado de Usuarios</h2></div>
-        </div>
-        <div class="row">
-            <div class="card-columns">
-            <% users.forEach(oneUser => { %>
-                <div class="card bg-light text-black text-center">
-                    <h3 class="card-title"><a href="/profile/<%= oneUser.id %>"><%= oneUser.name %> <%= oneUser.lastname %></a></h3>
-                    <h5 class="card-text"><%= oneUser.email %></h5>
-                    <img src="../images/avatars/<%=oneUser.avatar %>" class="card-img-top" alt="">
+        <div class="row align-items-start">
+            <div class="col-4 align-self-center">
+                <img src="/images/avatars/<%= user.avatar %>" width="300">
+                    </div>
+            <div class="col-8">
+                <div class="welcome-user">
+        <h2>Welcome <%= `${user.name} ${user.lastname}` %>!</h2>
                 </div>
-            <% }); %>
-        </div>
-        </div>
+        <ul>
+			<li>Tu correo es: <a href="mailto:<%= user.email %>"><%= user.email %></a></li>
+        </ul>
+        <div class="bio-user"><p><%= user.bio %></p></div>
+                   </div>
+            
+
     </div>
+	</div>	
 </body>
 </html>

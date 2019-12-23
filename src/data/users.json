@@ -5,6 +5,7 @@
   "lastname": "Marsh",
   "email": "cockmagic@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1576933613012.PNG"
  },
  {
@@ -13,6 +14,7 @@
   "lastname": "Marsh",
   "email": "lifeisshit@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1576938683673.PNG"
  },
  {
@@ -21,6 +23,7 @@
   "lastname": "Broflowski",
   "email": "jewfro@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1576938729806.PNG"
  },
  {
@@ -29,6 +32,7 @@
   "lastname": "McCormick",
   "email": "mysterion@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1576938813069.PNG"
  },
  {
@@ -37,6 +41,7 @@
   "lastname": "Cartman",
   "email": "thedawg@mail.com",
   "password": "123",
+  "bio": "Cartman is foul-mouthed (as are his friends) to provide a means for Parker and Stone to portray how they believe young boys really talk when they are alone.[30][47] According to Parker, Cartman does not possess",
   "avatar": "user_avatar_1576938867384.PNG"
  },
  {
@@ -45,6 +50,7 @@
   "lastname": "Stotch",
   "email": "sugarandspice@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1576938893328.PNG"
  },
  {
@@ -53,6 +59,7 @@
   "lastname": "Testaburger",
   "email": "girlpower@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1576939006856.PNG"
  },
  {
@@ -61,6 +68,7 @@
   "lastname": "Timmy",
   "email": "Timmy@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1576939032894.PNG"
  },
  {
@@ -69,6 +77,7 @@
   "lastname": "Berger",
   "email": "workbitch@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1577061544217.PNG"
  },
  {
@@ -77,6 +86,7 @@
   "lastname": "Garrison",
   "email": "iwantanabortion@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1577063298975.PNG"
  },
  {
@@ -85,6 +95,25 @@
   "lastname": "P.C.",
   "email": "bebespc@mail.com",
   "password": "123",
+  "bio": "El tema de la biografia",
   "avatar": "user_avatar_1577063322796.PNG"
+ },
+ {
+  "id": 12,
+  "name": "User",
+  "lastname": "de prueba",
+  "email": "paraver@sianda.com",
+  "password": "123",
+  "bio": "El tema de la biografia",
+  "avatar": "user_avatar_1576933613012.PNG"
+ },
+ {
+  "id": 13,
+  "name": "Jimmy",
+  "lastname": "Valmer",
+  "email": "standupguy@mail.com",
+  "password": "123",
+  "bio": "Jimmy Valmer (formerly Jimmy Swanson and sometimes spelled Vulmer), voiced by Trey Parker, is physically disabled, requiring forearm crutches in order to walk. His disability has never been specified on the show but seems visually and functionally similar to cerebral palsy.",
+  "avatar": "user_avatar_1577131650977.jpg"
  }
 ]

@@ -57,7 +57,8 @@ const controller = {
 			lastname: req.body.lastname,
 			email: req.body.email,
             //password: bcrypt.hashSync(req.body.password, 10),
-            password: req.body.password,
+			password: req.body.password,
+			bio:req.body.bio,
 			avatar: req.file.filename
 		};
 		
@@ -67,25 +68,31 @@ const controller = {
 		// Redirección al login
         res.redirect('/login');
         //** -- COSAS DE PAO --- res.send("andó!!!");
-	},loginForm:(req, res) => {
+	},
+	loginForm:(req, res) => {
         //res.send('Esta es la pagina de login'); // ESTO ES PARA COMPROBAR SI ANDA
         res.render('login');
-	},//processLogin: (req, res) =>{
+	},
+	processLogin: (req, res) =>{
 		// Buscar usuario por email
-		//let user = getUserByEmail(req.body.email);
+		let user = getUserByEmail(req.body.email);
 		
 		// Si encontramos al usuario
-		//if (user != undefined) {
+		if (user != undefined) {
 			// Al ya tener al usuario, comparamos las contraseñas
-			//res.send(user);
-		//} else {
-		//	res.send('No hay usuarios registrados con ese email');
-		//}
-	//},
+			res.send(user);
+		} else {
+		res.send('No hay usuarios registrados con ese email')}
+	},
 	pruebas:(req, res) => {
         //res.send('Esta es la pagina de login'); // ESTO ES PARA COMPROBAR SI ANDA
 		res.render('pruebas');
 	},
+	profile: (req, res) => {
+		let userLoged = getUserById(req.params.id);
+
+		res.render('profile', { user: userLoged });
+	}
 }
 
 module.exports = controller;
