@@ -25,15 +25,13 @@
             <div class="col-12r"><h2>Listado de Usuarios</h2></div>
         </div>
         <div class="row">
-            <div class="card-columns">
             <% users.forEach(oneUser => { %>
-                <div class="card bg-light text-black text-center">
-                    <h3 class="card-title"><%= oneUser.name %> <%= oneUser.lastname %></h3>
-                    <h5 class="card-text"><%= oneUser.email %></h5>
-                    <img src="../images/avatars/<%=oneUser.avatar %>" class="card-img-top" alt="">
+                <div class="col-3  user-box">
+                    <h3 class="titulo-usuario"><%= oneUser.name %> <%= oneUser.lastname %></h3>
+                    <h5><%= oneUser.email %></h5>
+                    <img src="../images/avatars/<%=oneUser.avatar %>" alt="">
                 </div>
             <% }); %>
-        </div>
         </div>
     </div>
 </body>

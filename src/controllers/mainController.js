@@ -4,6 +4,7 @@ const fs = require('fs');
 
 // Constants
 const userFilePath = __dirname + '/../data/users.json';
+const users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
 
 // Helper Functions
 function getAllUsers () {
@@ -31,6 +32,7 @@ function getUserByEmail(email) {
 	let allUsers = getAllUsers();
 	let userToFind = allUsers.find(oneUser => oneUser.email == email);
 	return userToFind;
+	
 }
 
 function getUserById(id) {
@@ -40,6 +42,11 @@ function getUserById(id) {
 }
 
 const controller = {
+	home: (req, res) => {
+        res.render('index', {
+			users //esta const la declare al prncipio, lee todo el archivo JSON
+		});
+    },
 	registerForm: (req, res) => {
         //res.send('Página de Registro'); ** ESTO ES PARA COMPROBAR SI ANDA
         res.render('register');
@@ -58,8 +65,26 @@ const controller = {
 		storeUser(userFinalData);
 		
 		// Redirección al login
-        //res.redirect('/login');
-        res.send("andó!!!");
+        res.redirect('/login');
+        //** -- COSAS DE PAO --- res.send("andó!!!");
+	},loginForm:(req, res) => {
+        //res.send('Esta es la pagina de login'); // ESTO ES PARA COMPROBAR SI ANDA
+        res.render('login');
+	},//processLogin: (req, res) =>{
+		// Buscar usuario por email
+		//let user = getUserByEmail(req.body.email);
+		
+		// Si encontramos al usuario
+		//if (user != undefined) {
+			// Al ya tener al usuario, comparamos las contraseñas
+			//res.send(user);
+		//} else {
+		//	res.send('No hay usuarios registrados con ese email');
+		//}
+	//},
+	pruebas:(req, res) => {
+        //res.send('Esta es la pagina de login'); // ESTO ES PARA COMPROBAR SI ANDA
+		res.render('pruebas');
 	},
 }
 

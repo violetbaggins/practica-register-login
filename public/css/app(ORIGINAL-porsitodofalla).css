@@ -46,11 +46,3 @@ header{
     left:5px;
     color:#FFF;
 }
-.card-columns{
-    width: 95%;
-    margin: 10px auto;
-    column-count: 4;
-}
-.card{
-    margin:5px;
-}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/pruebas.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu&display=swap" rel="stylesheet">
+    <title>Reshister</title>
+</head>
+<body>
+  <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/register">Register</a>
+            <a href="/login">Log in</a>
+        </nav>
+    </header>
+	<h1>PRUEBAS DE COLLAPSE ACCORDION</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+  <!-- aca empieza el accordion -->
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Click para ver un gato
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+
+              <h5 class="card-title">Un Gato</h5>
+              <p class="card-text">Aca se escribe la respuesta de lo que quiero mostrar, vamos a meterle imagen a ver que sale</p>
+              <img src="http://placekitten.com/200/200" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+
+         <!-- aca empieza La pregunta 2 -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                       Click para ver otro gato
+                      </button>
+  
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <img src="http://placekitten.com/200/200" class="card-img-top" alt="">
+            </div>
+          </div>
+        </div>
+
+         <!-- aca empieza La pregunta 3 -->
+        <div class="card bg-dark mb-3">
+          <div class="card-header" id="headingThree">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              y aca obvio que va a haber mas gatos
+              </button>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body no-gutters">
+              <img src="http://placekitten.com/450/450" class="card-img" alt="">
+
+                <div>
+                <h3 class="card-title">Aca iria un titulo</h3>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure nihil consequuntur cum nam perspiciatis eveniet laudantium nisi reiciendis magnam aperiam.
+                </p>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ↑↑↑↑↑↑↑↑ aca termina el accordion -->
+            </div>
+             <!-- ↑↑↑↑↑↑↑↑ aca termina el DIV del COL -->
+             <div class="col-8">
+               <div class="content-right">
+                <!-- ESTAS SON LAS TARJETAS AL COSTADO. car-deck es para q esten separadas, card-group es para q esten juntas -->
+                <div class="card-deck">
+                  <div class="card">
+                    <img src="http://placekitten.com/100/100" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text </p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://placekitten.com/100/100" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://placekitten.com/100/100" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional .</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+
+               </div>
+              </div>
+        </div> 
+  <!-- ↑↑↑↑↑↑↑↑ aca termina el DIV del ROW -->
+  <br>
+  <div class="row">
+      <!-- ↓↓↓↓↓↓ MASONRY lo que se ve como pinterest ↓↓-->
+    <div class="card-columns">
+      <div class="card">
+        <img src="http://placekitten.com/200/200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title that wraps to a new line</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+      <div class="card p-3">
+        <blockquote class="blockquote mb-0 card-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card">
+        <img src="http://placekitten.com/300/200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card bg-secondary text-white text-center p-3">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card bg-primary text-white text-center p-3">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <div class="card bg-dark text-white text-center p-3">
+        <img src="http://placekitten.com/300/400" class="card-img-top" alt="...">
+      </div>
+      <div class="card p-3 text-right">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card bg-warning text-white text-center p-3">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card bg-info text-white text-center p-3">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ↑↑↑↑↑↑↑↑ aca termina el DIV del ROW 2 -->
+      </div>
+<!-- ↑↑↑↑↑↑↑↑ aca termina el DIV del container  -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

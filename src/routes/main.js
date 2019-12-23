@@ -20,9 +20,11 @@ const upload = multer({ storage: storageDisk });
 /************ Controller Require *************/
 const mainController = require('../controllers/mainController');
 
+router.get('/', mainController.home);
+router.get('/pruebas', mainController.pruebas);
 router.get('/register', mainController.registerForm);
 router.post('/register', upload.single('avatar'), mainController.store);
-//router.get('/login', mainController.loginForm);
+router.get('/login', mainController.loginForm);
 //router.post('/login', mainController.processLogin);
 //router.get('/profile/:id', mainController.profile);
 

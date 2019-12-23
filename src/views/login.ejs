@@ -17,39 +17,20 @@
             <a href="/login">Log in</a>
         </nav>
     </header>
-	<h1>Reshister Jier:</h1>
+	<h1>Logueate ameo:</h1>
     <div class="container">
-		<h3>Formulario de Registro</h3>
-		<div class="row">
-		<form action="/register" method="POST" enctype="multipart/form-data">
-			<div class="col-12 form-group">
-				<label>Nombre:</label>
-				<input type="text" name="name" placeholder="Ej: Ana">
-			</div>
-			<div class="col-12 form-group">
-				<label>Apellido:</label>
-				<input type="text" name="lastname" placeholder="Ej: Pérez">
-			</div>
-			<div  class="col-12 form-group">
+		<h2>Formulario de Logeo</h2>
+		<form action="/login" method="POST" enctype="multipart/form-data">
+			<div>
 				<label>Email:</label>
-				<input type="email"name="email" placeholder="Ej: email@server.com">
+				<input type="email" name="email" placeholder="Ej: email@server.com">
 			</div>
-			<div class="col-12 form-group">
+			<div>
 				<label>Contraseña:</label>
 				<input type="password" name="password" placeholder="******">
 			</div>
-			<div  class="col-12 form-group">
-				<label>Repetir Contraseña:</label>
-				<input type="password" name="rePassword" placeholder="******">
-			</div>
-			<div  class="col-12 form-group">
-				<label>Avatar:</label>
-				<input type="file" name="avatar">
-			</div>
-			<button type="submit">Registrarse</button>
+			<button type="submit">Login</button>
 		</form>
 	</div>
-	</div>
-
 </body>
 </html>
