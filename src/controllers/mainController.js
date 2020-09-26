@@ -78,11 +78,11 @@ const controller = {
 		let user = getUserByEmail(req.body.email);
 		
 		// Si encontramos al usuario
-		if (user != undefined) {
+		//if (user != undefined) {
 			// Al ya tener al usuario, comparamos las contraseñas
 			res.send(user);
-		} else {
-		res.send('No hay usuarios registrados con ese email')}
+		//} else {
+		//res.send('No hay usuarios registrados con ese email')}
 	},
 	pruebas:(req, res) => {
         //res.send('Esta es la pagina de login'); // ESTO ES PARA COMPROBAR SI ANDA

@@ -13,7 +13,7 @@ h1{
     text-align: center;
 }
 nav{
-    margin-left:20px;
+    margin:0px;
     font-size: 22px;
 }
 nav a{
@@ -28,7 +28,8 @@ nav a:hover{
 header{
     display:block;
     background-color: lightcoral;
-    padding-right: 20px;
+    padding: 10px;
+    height:50px;
 }
 
 .container {
@@ -80,4 +81,7 @@ header{
     border: solid white 1px;
     background-color: lightseagreen;
     padding:10px;
+}
+.container-profile{
+    background-color:transparent;
 }

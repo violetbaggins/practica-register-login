@@ -17,22 +17,21 @@
             <a href="/login">Log in</a>
         </nav>
     </header>
-    <div class="container">
+    <div class="container container-profile">
         <div class="row align-items-start">
-            <div class="col-4 align-self-center">
+            <div class="col-3 align-self-center">
                 <img src="/images/avatars/<%= user.avatar %>" width="300">
                     </div>
+                    <div class="col-1"></div>
             <div class="col-8">
                 <div class="welcome-user">
-        <h2>Welcome <%= `${user.name} ${user.lastname}` %>!</h2>
+        <h2>This is <%= `${user.name} ${user.lastname}` %>!</h2>
                 </div>
         <ul>
-			<li>Tu correo es: <a href="mailto:<%= user.email %>"><%= user.email %></a></li>
+			<li>Su correo es: <a href="mailto:<%= user.email %>"><%= user.email %></a></li>
         </ul>
         <div class="bio-user"><p><%= user.bio %></p></div>
-                   </div>
-            
-
+            </div>  
     </div>
 	</div>	
 </body>
